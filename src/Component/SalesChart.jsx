@@ -1,34 +1,45 @@
-// import React from "react";
-import { Paper, Typography } from "@mui/material";
-import { Bar } from "react-chartjs-2";
-import {
-  Chart as ChartJS,
-  BarElement,
-  CategoryScale,
-  LinearScale,
-} from "chart.js";
 
-ChartJS.register(BarElement, CategoryScale, LinearScale);
+import { Pie } from "react-chartjs-2";
+import { useSelector } from "react-redux";
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 
-const SalesChart = ({ salesData }) => {
+
+ChartJS.register(ArcElement, Tooltip, Legend);
+
+const SalesChart = () => {
+  const { data } = useSelector((state) => state.data);
+
   const chartData = {
-    labels: salesData.map((data) => data.month),
+    labels: data.map((item) => item.month), 
     datasets: [
       {
-        label: "Sales Report",
-        data: salesData.map((data) => data.sales),
-        backgroundColor: "rgba(54, 162, 235, 0.8)",
+        label: "Sales",
+        data: data.map((item) => item.sales), 
+        backgroundColor: [
+          "#FF6384",
+          "#36A2EB",
+          "#FFCE56",
+          "#4BC0C0",
+          "#9966FF",
+          "#FF9F40",
+        ],
+        hoverBackgroundColor: [
+          "#FF6384",
+          "#36A2EB",
+          "#FFCE56",
+          "#4BC0C0",
+          "#9966FF",
+          "#FF9F40",
+        ],
       },
     ],
   };
 
   return (
-    <Paper elevation={3} sx={{ padding: 2 }} style={{width:1000,height:600}}>
-      <Typography variant="h6" gutterBottom>
-        Sales Chart
-      </Typography>
-      <Bar data={chartData} />
-    </Paper>
+    <div style={{ width: "100%", maxWidth: "500px", margin: "auto" }}>
+      <h3>Sales Distribution</h3>
+      <Pie data={chartData} />
+    </div>
   );
 };
 
