@@ -4,13 +4,16 @@ import Login from './Component/Login';
 import Dashboard from './Component/DashBoard';  
 import SalesForm from './Component/SalesFrom';  
 import SalesTable from './Component/SalesTable';  
+import Navbar from './Component/Navbar';
 
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
+
     <Router>
+      <Navbar/>
       <Routes>
   
         {!isLoggedIn ? (

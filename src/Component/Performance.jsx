@@ -26,7 +26,7 @@ const data = [
 const PerformanceBarChart = () => {
   return (
     <div style={{ margin: "50px", background: "#1e293b", padding: "20px", borderRadius: "8px" }}>
-      <h2 style={{ color: "white", textAlign: "center" }}>Previous Performance</h2>
+      <h2 style={{ color: "white", textAlign: "center" }}>Total Performance</h2>
       <BarChart width={1000} height={300} data={data}>
         <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
         <XAxis dataKey="month" stroke="white" />

@@ -2,6 +2,8 @@ import "./Login.css"
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
 import img from "../assets/Chennai-Unit.png"
+
+
 const Login = ({ setIsLoggedIn }) => {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const navigate = useNavigate();
@@ -19,7 +21,7 @@ const Login = ({ setIsLoggedIn }) => {
     <div className="container-fluid vh-50 align-items-center justify-content-center" style={{backgroundImage:
       `url(${img})`,
   height: "100vh",
-  marginTop: "-70px",
+  marginTop: "60px",
   fontSize: "50px",
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat"}}>

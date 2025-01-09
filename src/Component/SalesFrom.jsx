@@ -34,7 +34,7 @@ const navigate=useNavigate()
   return (
    
     <>
-    <form onSubmit={handleSubmit} className="form-container">
+    <form onSubmit={handleSubmit} className="form-container" style={{marginTop:"70px"}}>
       <label className="" >Id</label>
       <input type="text" value={formData.id} onChange={handleChange} name="id" ></input>
       <label className="" >Name</label>
@@ -52,7 +52,6 @@ const navigate=useNavigate()
 };
 
 export default SalesForm;
-
 
 
 
