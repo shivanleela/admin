@@ -16,7 +16,9 @@ const SalesTable = () => {
 
   return (
     <>
-      <table border="1" style={{ width: "100%", textAlign: "left", borderCollapse: "collapse" }}>
+
+    {
+      data.length ===0 ?(<div style={{width:500,fontSize:30}}>No Record Available</div>):(<table border="1" style={{ width: "100%", textAlign: "left", borderCollapse: "collapse" }}>
         <thead>
           <tr>
             <th>Id</th>
@@ -41,7 +43,9 @@ const SalesTable = () => {
             </tr>
           ))}
         </tbody>
-      </table>
+      </table>)
+    }
+      
     </>
   );
 };

@@ -12,12 +12,13 @@
     }
 
     th {
-      background-color: #f4f4f4;
+      background-color: #2335c8;
       font-weight: bold;
     }
 
     td {
       background-color: #fff;
+      color: black;
     }
 
     /* Add alternating row colors using nth-child */

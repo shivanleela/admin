@@ -30,14 +30,13 @@ const SalesForm = () => {
   return (
    
     <>
-<h3>Add sales Details</h3>
     <form onSubmit={handleSubmit} className="form-container">
       <label className="" >ID</label>
-      <input type="text" value={formData.id} onChange={handleChange} name="id" placeholder="Id"></input>
+      <input type="text" value={formData.id} onChange={handleChange} name="id" ></input>
       <label  className="">MONTH</label>
-      <input type="text" value={formData.month} onChange={handleChange} name="month" placeholder="Month"></input>
+      <input type="text" value={formData.month} onChange={handleChange} name="month" ></input>
       <label className="" >SALES</label>
-      <input type="text" value={formData.sales} onChange={handleChange} name="sales" placeholder="Sales"></input>
+      <input type="text" value={formData.sales} onChange={handleChange} name="sales" ></input>
       <input type="submit" className="button" />
     </form>
     </>
