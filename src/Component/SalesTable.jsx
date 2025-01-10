@@ -18,7 +18,7 @@ const SalesTable = () => {
     <>
 
     {
-      data.length ===0 ?(<div style={{width:500,fontSize:30,marginTop:70}}>No Record Available</div>):(<table border="1" style={{ width: "100%", textAlign: "left", borderCollapse: "collapse" }}>
+      data.length ===0 ?(<div style={{width:500,fontSize:30,marginTop:70}}>No Record Available</div>):(<table border="1" style={{ width: "100%", textAlign: "left", borderCollapse: "collapse" ,marginTop:"80px"}}>
         <thead>
           <tr>
             <th>Id</th>
