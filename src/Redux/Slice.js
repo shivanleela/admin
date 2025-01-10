@@ -4,8 +4,10 @@ const initialState={
     data:[],
     error:"",
     isLoading:false
+   
 
 }
+
 
 export const ChartSlice=createSlice({
     name:"data",
