@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useSelector } from "react-redux";
 import { Chart, LinearScale } from "chart.js";
 import { VennDiagramController, ArcSlice } from "chartjs-chart-venn";

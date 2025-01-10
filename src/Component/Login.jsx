@@ -29,7 +29,7 @@ const Login = ({ setIsLoggedIn }) => {
         <div className="col-md-6 p-5 w-45">
           <h2 className="text-center mb-4" style={{ color: "#baa0cd" }}>Login to Dashboard</h2>
           <form onSubmit={handleSubmit(onSubmit)}>
-            {/* Username Field */}
+
             <div className="mb-3">
               
               <input
@@ -46,7 +46,7 @@ const Login = ({ setIsLoggedIn }) => {
               )}
             </div>
 
-            {/* Password Field */}
+         
             <div className="mb-3">
               
               <input
@@ -66,7 +66,7 @@ const Login = ({ setIsLoggedIn }) => {
               )}
             </div>
 
-            {/* Login Button */}
+    
             <div className="d-grid">
               <button type="submit" className="btn btn-primary mt-1">Login</button>
             </div>
