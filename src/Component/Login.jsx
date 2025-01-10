@@ -41,7 +41,7 @@ const Login = ({ setIsLoggedIn }) => {
               />
               {errors.username && (
                 <div className="invalid-feedback" style={{ color: 'red' }}>
-                  {errors.username.message}
+                  <p style={{fontSize:"20px"}}>{errors.username.message}</p>
                 </div>
               )}
             </div>
@@ -61,7 +61,7 @@ const Login = ({ setIsLoggedIn }) => {
               />
               {errors.password && (
                 <div className="invalid-feedback" style={{ color: 'red' }}>
-                  {errors.password.message}
+                 <p style={{fontSize:"20px"}}>{errors.password.message}</p> 
                 </div>
               )}
             </div>
